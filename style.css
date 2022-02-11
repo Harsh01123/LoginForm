@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg")
+    no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm {
+  height: 80%;
+  width: 85%;
+  background-color: #00000049;
+  border-radius: 20px;
+  color: #fff;
+  padding: 100px;
+  position: relative;
+}
+.loginContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px;
+  font-size: 30px;
+}
+.loginForm h1 {
+  font-family: "Redressed", cursive;
+  padding-left: 50px;
+  font-size: 50px;
+}
+.loginForm button {
+  position: absolute;
+  padding: 10px;
+  font-size: 20px;
+  right: 20rem;
+  bottom: 10rem;
+  background-color: #13ffff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: 1s ease-in-out;
+}
+.loginForm button:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff,
+    0 0 5px #13ffff;
+  box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
+}
+.usr {
+  padding-bottom: 50px;
+  color: #13ffff;
+}
+label {
+  font-family: "Rowdies", cursive;
+  position: absolute;
+  left: 200px;
+  color: #fff;
+  z-index: 0;
+}
+.pass {
+  padding-bottom: 50px;
+  color: #13ffff;
+}
+.loginContent input {
+  font-size: 23px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #13ffff;
+  width: 45rem;
+  z-index: 1;
+  transition: 0.5s ease-in;
+}
+
+.loginContent input:focus ~ label,
+.loginContent input:valid ~ label {
+  transform: translateY(-15px);
+  color: #13ffff;
+  font-size: 20px;
+  transition: 0.5s ease-out;
+}
